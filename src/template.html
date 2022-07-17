@@ -6,14 +6,16 @@
         <script src="https://api-maps.yandex.ru/2.1/?apikey=462e5162-2e3f-417b-9837-f2980490870d&lang=ru_RU" type="text/javascript"></script>
     </head>
     <body>
-        <div class="map__review d-none">
+        <div class="map__review d-none" id="map__review">
             <h4 class="map__review-title">
                 Отзыв:
             </h4>
-            <input type="text" name="name" id="" placeholder="Укажите ваше имя">
-            <input type="text" name="place" id="" placeholder="Укажите место">
-            <textarea type="text" name="review" id="" placeholder="Оставить отзыв"></textarea>
-            <button id="map__review-add">Добавить</button>
+            <form action="" class="map__review-form">
+                <input type="text" name="name" placeholder="Укажите ваше имя">
+                <input type="text" name="place" placeholder="Укажите место">
+                <textarea type="text" name="review" placeholder="Оставить отзыв"></textarea>
+                <button id="map__review-add">Добавить</button>
+            </form>
             <div class="close">
                 <svg width="15" height="16" viewBox="0 0 15 16" fill="none" xmlns="http://www.w3.org/2000/svg">
                     <path d="M0 1.28249L0.707107 0.575378L14.8492 14.7175L14.1421 15.4246L0 1.28249Z" fill="#000000"/>
